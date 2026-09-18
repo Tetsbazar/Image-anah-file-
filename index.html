@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Test Bazar Logo</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.logo-box{
+    width:100%;
+    max-width:900px;
+    padding:40px 25px;
+    text-align:center;
+}
+
+/* MAIN LOGO */
+.logo-icon{
+    width:min(430px,85vw);
+    height:auto;
+    margin:auto;
+    display:block;
+}
+
+/* BRAND NAME */
+.brand{
+    margin-top:12px;
+    font-size:clamp(50px,8vw,92px);
+    font-weight:900;
+    letter-spacing:-4px;
+    line-height:1;
+}
+
+.brand .test{
+    color:#073B78;
+}
+
+.brand .bazar{
+    color:#FF9D00;
+}
+
+/* TAGLINE */
+.tagline{
+    margin:18px auto 22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    color:#073B78;
+    font-size:clamp(15px,2.2vw,25px);
+    font-weight:500;
+    letter-spacing:.5px;
+}
+
+.line{
+    width:80px;
+    height:3px;
+    background:#073B78;
+    border-radius:5px;
+}
+
+/* CATEGORY BAR */
+.category{
+    width:min(760px,95%);
+    margin:auto;
+    background:#073B78;
+    border-radius:50px;
+    min-height:75px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    padding:10px 25px;
+    gap:35px;
+    font-size:clamp(15px,2vw,24px);
+    font-weight:700;
+}
+
+.category-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    white-space:nowrap;
+}
+
+.category-item span{
+    color:#FFB000;
+    font-size:28px;
+}
+
+.divider{
+    width:2px;
+    height:38px;
+    background:#FFB000;
+}
+
+
+/* MOBILE */
+@media(max-width:600px){
+
+    .logo-box{
+        padding:25px 10px;
+    }
+
+    .brand{
+        letter-spacing:-2px;
+    }
+
+    .tagline{
+        gap:8px;
+        font-size:14px;
+    }
+
+    .line{
+        width:35px;
+        height:2px;
+    }
+
+    .category{
+        min-height:auto;
+        border-radius:25px;
+        padding:13px 8px;
+        gap:8px;
+    }
+
+    .category-item{
+        gap:5px;
+        font-size:12px;
+    }
+
+    .category-item span{
+        font-size:19px;
+    }
+
+    .divider{
+        height:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="logo-box">
+
+    <!-- TB ICON -->
+    <svg class="logo-icon"
+         viewBox="0 0 600 430"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+
+            <!-- Blue Gradient -->
+            <linearGradient id="blueGrad"
+                x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#062F67"/>
+                <stop offset="100%" stop-color="#0756A5"/>
+            </linearGradient>
+
+            <!-- Gold Gradient -->
+            <linearGradient id="goldGrad"
+                x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FFC400"/>
+                <stop offset="100%" stop-color="#FF8A00"/>
+            </linearGradient>
+
+        </defs>
+
+
+        <!-- GOLD TB BACKGROUND / B -->
+        <path
+            d="M330 70
+               C430 45 535 80 540 175
+               C545 230 505 270 470 280
+               C525 295 535 340 505 370
+               C470 405 390 410 315 395
+               L350 330
+               C400 345 440 335 442 310
+               C444 285 410 278 365 280
+               L385 220
+               C430 225 455 210 450 180
+               C445 150 410 145 365 155
+               Z"
+            fill="url(#goldGrad)"
+        />
+
+
+        <!-- BIG T -->
+        <path
+            d="M55 55
+               L390 55
+               L350 125
+               L265 125
+               L215 350
+               L125 350
+               L175 125
+               L15 125
+               Z"
+            fill="url(#blueGrad)"
+        />
+
+
+        <!-- TEST PAPER -->
+        <g transform="translate(245,125) rotate(-5)">
+
+            <!-- Paper -->
+            <path
+                d="M0 0
+                   L170 0
+                   L150 215
+                   L-20 215
+                   Z"
+                fill="white"
+                stroke="#073B78"
+                stroke-width="9"
+            />
+
+            <!-- Paper top -->
+            <line
+                x1="25" y1="35"
+                x2="130" y2="35"
+                stroke="#073B78"
+                stroke-width="10"
+                stroke-linecap="round"
+            />
+
+            <!-- Question 1 -->
+            <circle
+                cx="25" cy="75"
+                r="13"
+                fill="white"
+                stroke="#073B78"
+                stroke-width="7"
+            />
+
+            <line
+                x1="52" y1="75"
+                x2="130" y2="75"
+                stroke="#073B78"
+                stroke-width="8"
+                stroke-linecap="round"
+            />
+
+            <!-- Checked answer -->
+            <circle
+                cx="25" cy="115"
+                r="14"
+                fill="#073B78"
+            />
+
+            <path
+                d="M18 115 L24 121 L36 106"
+                fill="none"
+                stroke="white"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+
+            <line
+                x1="52" y1="115"
+                x2="130" y2="115"
+                stroke="#073B78"
+                stroke-width="8"
+                stroke-linecap="round"
+            />
+
+            <!-- Question 3 -->
+            <circle
+                cx="25" cy="155"
+                r="13"
+                fill="white"
+                stroke="#073B78"
+                stroke-width="7"
+            />
+
+            <line
+                x1="52" y1="155"
+                x2="130" y2="155"
+                stroke="#073B78"
+                stroke-width="8"
+                stroke-linecap="round"
+            />
+
+            <!-- Question 4 -->
+            <circle
+                cx="25" cy="195"
+                r="13"
+                fill="white"
+                stroke="#073B78"
+                stroke-width="7"
+            />
+
+            <line
+                x1="52" y1="195"
+                x2="115" y2="195"
+                stroke="#073B78"
+                stroke-width="8"
+                stroke-linecap="round"
+            />
+
+        </g>
+
+
+        <!-- GOLD SWOOSH -->
+        <path
+            d="M55 315
+               C130 390 285 400 420 355"
+            fill="none"
+            stroke="url(#goldGrad)"
+            stroke-width="18"
+            stroke-linecap="round"
+        />
+
+
+        <!-- GRADUATION CAP -->
+        <g transform="translate(420,15)">
+
+            <!-- Cap -->
+            <path
+                d="M0 40
+                   L90 5
+                   L180 40
+                   L90 75
+                   Z"
+                fill="url(#blueGrad)"
+            />
+
+            <!-- Cap base -->
+            <path
+                d="M35 55
+                   L90 78
+                   L145 55
+                   L145 85
+                   C115 105 65 105 35 85
+                   Z"
+                fill="#073B78"
+            />
+
+            <!-- Tassel -->
+            <line
+                x1="145" y1="55"
+                x2="170" y2="100"
+                stroke="#073B78"
+                stroke-width="7"
+            />
+
+            <circle
+                cx="170"
+                cy="105"
+                r="9"
+                fill="#073B78"
+            />
+
+        </g>
+
+    </svg>
+
+
+    <!-- BRAND -->
+    <div class="brand">
+        <span class="test">Test</span>
+        <span class="bazar">Bazar</span>
+    </div>
+
+
+    <!-- TAGLINE -->
+    <div class="tagline">
+        <div class="line"></div>
+
+        <div>
+            One Stop for All Your Exam Preparation
+        </div>
+
+        <div class="line"></div>
+    </div>
+
+
+    <!-- CATEGORY -->
+    <div class="category">
+
+        <div class="category-item">
+            <span>📖</span>
+            School
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="category-item">
+            <span>🎓</span>
+            HS
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="category-item">
+            <span>🎯</span>
+            Competitive
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
